@@ -1,0 +1,110 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    position: fixed;
+    width: 80%;
+    height: 100px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 10000;
+    background-color: white;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 100px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 10000;
+    background-color: white;
+}
+#instructions{
+    width: 19,1%;
+    height: 658px;
+    position: fixed;
+    left: 80%;
+    bottom:0%;
+    font-size: 19px;
+    font: italic bold 15px monospace;
+    text-align-last: justify;
+    top: 250px;
+    
+}
+#main{
+    position: fixed;
+    width: 80%;
+    height: 460px;
+    overflow: auto ;
+    border-right: 1px solid black;
+    top: 15%;
+}
+
+#card{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 90px;
+  
+}
+#button{
+    border: 1px solid blue;
+    background-color: white;
+    margin: 30px 30px;
+    cursor:pointer;
+    height: 30px;    
+}
+#button:hover{
+    background-color: blue;
+    border: 1px solid rgb(0, 0, 185);
+    transition:2s;  
+}
+#cardId {
+    width: 39%;
+    height: 170px;
+    margin: 30px 40px;
+    border: 1px solid black ;
+    text-align: center;
+    font-size: 25px;
+    
+}
+#delet{
+    margin-left: 80%;
+    background-color: white;
+    border: 1px solid white ;
+    cursor:pointer;
+    font-size: 15px ;
+    color: black;
+}
+@media screen and (max-width:1255px){
+    #cardId{
+        width: 30%;
+        height: 150px;
+        margin: 30px 50px;
+        font-size: 22px;
+    }
+  }
+  @media screen and (max-width:850px){
+    #cardId{
+        width: 25%;
+        height: 130px;
+        margin: 30px 30px;
+        font-size: 18px;
+    }
+    #delet{
+        margin-left: 65%;
+    }
+  }
+  @media screen and (max-width:500px){
+    #cardId{
+        width: 23%;
+        height: 100px;
+        margin: 30px 15px;
+        font-size: 12px;
+    }
+  }
